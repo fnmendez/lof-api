@@ -1,0 +1,56 @@
+{
+  "name": "LOF-API",
+  "private": true,
+  "main": "index.js",
+  "engines": {
+    "node": "10.9.0",
+    "yarn": "1.9.4"
+  },
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "NODE_ENV=production node index.js",
+    "lint": "eslint ./src index.js",
+    "lint:fix": "eslint --fix ./src index.js",
+    "test": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:ci": "jest --coverage --testResultsProcessor=jest-junit",
+    "heroku:push": "cd .. && git subtree push --prefix api heroku-api master || true"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "bcrypt": "^3.0.0",
+    "koa": "^2.3.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-cors": "^0.0.16",
+    "koa-ejs": "^4.1.2",
+    "koa-jwt": "^3.2.2",
+    "koa-logger": "^3.1.0",
+    "koa-router": "^7.2.1",
+    "lodash": "^4.17.4",
+    "mongoose": "^4.12.0",
+    "nodemailer": "^4.6.8",
+    "uuid": "^3.1.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.0.1",
+    "eslint": "^4.8.0",
+    "eslint-config-prettier": "^2.6.0",
+    "eslint-plugin-prettier": "^2.3.1",
+    "jest": "^21.2.1",
+    "jest-junit": "^3.1.0",
+    "nodemon": "^1.12.1",
+    "prettier": "^1.7.4"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!<rootDir>/node_modules/"
+    ]
+  },
+  "jest-junit": {
+    "output": "./coverage/junit.xml",
+    "usePathForSuiteName": "true",
+    "classNameTemplate": "",
+    "titleTemplate": "{title}"
+  }
+}

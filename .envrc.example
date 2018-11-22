@@ -1,0 +1,11 @@
+export PORT=replace_with_value
+export API_URI=replace_with_value
+export API_SECRET=replace_with_value
+export BIKES_API_URI=replace_with_value
+export BIKES_API_USER=replace_with_value
+export BIKES_API_TOKEN=replace_with_value
+export BIKES_API_RUBI_ID=replace_with_value
+export BIKES_API_RADIUS=replace_with_value
+export MAIL_NAME=replace_with_value
+export MAIL_USER=replace_with_value
+export MAIL_PASSWORD=replace_with_value
