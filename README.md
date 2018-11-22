@@ -1,5 +1,8 @@
 # LOF Api
 
+[![circleB]][circleL]
+[![prettierB]][prettierL]
+
 ## About
 
 This API is built in Koa.js framework using MongoDB for [this mobile app](https://github.com/fnmendez/lof-mobile-app).
@@ -696,3 +699,11 @@ You can do this making use of [direnv](https://github.com/direnv/direnv) and the
 ## Author:
 
 - [Franco Méndez Z.](https://github.com/fnmendez) - Only engineer to develop this API and the [mobile app](https://github.com/fnmendez/lof-mobile-app)
+
+<!-- Badges -->
+
+[prettierB]:https://img.shields.io/badge/code%20style-prettier-orange.svg
+[prettierL]:https://github.com/prettier/prettier
+
+[circleB]:https://circleci.com/gh/fnmendez/lof-api/tree/master.svg?style=svg&circle-token=241328d9014c85b082f3debb98c70183f6e40921
+[circleL]:https://circleci.com/gh/fnmendez/lof-api/tree/master
