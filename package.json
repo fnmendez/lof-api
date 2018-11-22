@@ -51,5 +51,6 @@
     "usePathForSuiteName": "true",
     "classNameTemplate": "",
     "titleTemplate": "{title}"
-  }
+  },
+  "version": null
 }
