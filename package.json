@@ -3,8 +3,7 @@
   "private": true,
   "main": "index.js",
   "engines": {
-    "node": "10.9.0",
-    "yarn": "1.9.4"
+    "node": "10.9.0"
   },
   "scripts": {
     "dev": "nodemon index.js",
