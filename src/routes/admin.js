@@ -61,7 +61,7 @@ router.patch('updateBike', '/bikes/:rubi_id', async ctx => {
       'macAndroid',
       'macIOS',
       'firstHandshake',
-      'secondHanshake',
+      'secondHandshake',
     ])
     const bike = await Bike.findOneAndUpdate({ rubi_id: rubi_id }, attrs, {
       new: true,
