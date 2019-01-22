@@ -27,6 +27,9 @@ router.get('getBikes', '/:lat/:lon', async ctx => {
     for (let i = 0; i < devices.length; i++) {
       const exists = await Bike.findOne({ rubi_id: devices[i].rubi_id })
       if (exists) {
+        exists.lat = devices[i].lat
+        exists.lon = devices[i].lon
+        await exists.save()
         if (exists.available === true) filteredBikes.push(exists)
         continue
       }
